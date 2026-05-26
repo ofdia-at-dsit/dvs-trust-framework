@@ -24,18 +24,6 @@ Each item names the category it would be raised under and a severity in the main
 
 **Suggested fix:** an editor restores `\u00a0` between `ISO/IEC` and the number in the affected lines before the repository is used as a re-publication source for GOV.UK. Low priority because the cosmetic typography only matters on GOV.UK's rendering pipeline and can be re-applied by OfDIA editors at that stage.
 
-## Owner: user
-
-### KI-6 — CODEOWNERS handles are placeholders
-
-**Category:** structural-feedback
-**Severity:** blocker for public push
-**Status:** **User will apply the fix upstream before public push.**
-
-**Files affected:** [`.github/CODEOWNERS`](.github/CODEOWNERS), and `.github/ISSUE_TEMPLATE/config.yml` which references `OWNER/REPO` in links.
-
-**What is wrong:** Team handles `@ofdia-maintainers`, `@ofdia-policy`, `@ofdia-engineering` and the string `OWNER/REPO` are placeholders that need to be replaced with the real GitHub organisation and team handles before the repository is used publicly, otherwise review routing will silently fail.
-
 ## Resolved (during pre-publication setup)
 
 These items were raised earlier and are now addressed. They are retained here briefly for traceability; the summary log of how they were fixed is in [`CHANGELOG.md`](CHANGELOG.md) under "Pre-publication setup".
@@ -45,6 +33,7 @@ These items were raised earlier and are now addressed. They are retained here br
 - **KI-3** — Non-breaking spaces in headings and scattered body text. *Resolved*, with a narrower follow-up now tracked as KI-9. The cleanup removed all 268 NBSPs from the publication files rather than the 35 in headings that were originally in scope.
 - **KI-4** — Image placeholders are empty. *Resolved.* Real SVG files for Figures 2, 3 and 4 are now in `/media/`.
 - **KI-5** — Figure descriptions were placeholder drafts. *Resolved.* The `supporting-material/figure-descriptions/` folder has been removed; basic accessibility is now provided by alt text on the Markdown image references in the section files themselves. A deeper accessibility pass could add richer text descriptions in future without affecting the rest of the repository.
+- **KI-6** — CODEOWNERS handles and `OWNER/REPO` link placeholders. *Resolved.* The placeholder team handles `@ofdia-maintainers`, `@ofdia-policy` and `@ofdia-engineering` in `.github/CODEOWNERS` were replaced with the real maintainers `@henri-mf` and `@johnpeart`, so review routing now functions; team handles (e.g. `@ofdia/policy`) can be swapped in later per the comments in that file. The `OWNER/REPO` strings in `.github/ISSUE_TEMPLATE/config.yml` were replaced with the real slug `ofdia-at-dsit/dvs-trust-framework`, so the Discussions and SECURITY.md contact links resolve. Note the CODEOWNERS gate only enforces a merge block if branch protection on the default branch has "Require review from Code Owners" enabled, and each named owner needs read access to the repo.
 - **KI-7** — Licence specifics to confirm. *Resolved.* `LICENCE.md` updated to follow the [GDS Way licensing manual](https://gds-way.digital.cabinet-office.gov.uk/manuals/licensing.html): OGL v3.0 for documentation, the full MIT License text for code, and the correct Crown Copyright line. Maintainers should still confirm with DSIT/OfDIA that GDS Way's convention is a fit, because GDS Way is scoped to the GDS Product Group rather than DSIT.
 - **KI-8** — `$CTA` markers render as literal text on GitHub. *Resolved.* All `$CTA … $CTA` pairs replaced with standard Markdown blockquotes around the illustrative-example content.
 - **KI-10** — Rendered site's `govuk-frontend` CSS referenced assets at absolute paths that break on GitHub Pages subpath deploys. *Resolved.* The Eleventy config now reads the vendored CSS at build time, rewrites `url(/assets/...)` references using a `BASEURL` environment variable, and writes the adjusted file to `_site/stylesheets/`. The CI workflow passes `steps.pages.outputs.base_path` into the build as `BASEURL`, so the site works whether deployed at a domain root (BASEURL empty) or a repo subpath such as `https://user.github.io/dvs-trust-framework/`.
