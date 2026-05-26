@@ -1,0 +1,20 @@
+{
+  "name": "dvs-trust-framework-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GOV.UK-styled Eleventy site rendering the UK digital verification services trust framework workspace.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0"
+  },
+  "dependencies": {
+    "govuk-frontend": "^5.11.0"
+  }
+}
