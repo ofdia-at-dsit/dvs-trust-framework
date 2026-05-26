@@ -1,0 +1,42 @@
+name: Broken or out-of-date link
+description: Report a link that is broken, redirects incorrectly, or points to superseded content.
+title: "[link] "
+labels: ["broken-link", "triage"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File containing the link
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: The link
+      placeholder: https://www.gov.uk/...
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: What's wrong with it?
+      options:
+        - 404 / not found
+        - Redirects elsewhere
+        - Reaches a superseded page
+        - Internal cross-reference no longer resolves
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Additional detail
+    validations:
+      required: false
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement URL
+    validations:
+      required: false

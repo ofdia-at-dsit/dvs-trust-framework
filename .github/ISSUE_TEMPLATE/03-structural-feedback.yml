@@ -1,0 +1,26 @@
+name: Structural or navigation feedback
+description: Feedback on repository structure, folder layout, README content, cross-links or table of contents.
+title: "[nav] "
+labels: ["navigation", "triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What is the issue?
+      description: Describe the navigation or structural problem you encountered.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where does it occur?
+      description: Which README, section, or set of files?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: If you have one. It's OK not to have one.
+    validations:
+      required: false

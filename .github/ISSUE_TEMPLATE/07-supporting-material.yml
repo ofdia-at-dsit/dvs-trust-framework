@@ -1,0 +1,39 @@
+name: Supporting material proposal
+description: Propose a diagram, worked example, mapping, annex or other implementation aid for supporting-material/.
+title: "[support] "
+labels: ["supporting-material", "triage"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of material
+      options:
+        - Diagram
+        - Worked example or scenario
+        - Mapping to an external standard
+        - Annex / checklist / template
+        - Plain-English explainer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What would this material do?
+      description: Briefly describe the material and what it would help readers do.
+    validations:
+      required: true
+  - type: input
+    id: related
+    attributes:
+      label: Related publication section(s)
+      placeholder: e.g. sections 4.3 and 8
+    validations:
+      required: false
+  - type: textarea
+    id: draft
+    attributes:
+      label: Draft or outline (optional)
+      description: Attach or paste a first draft if you have one.
+    validations:
+      required: false

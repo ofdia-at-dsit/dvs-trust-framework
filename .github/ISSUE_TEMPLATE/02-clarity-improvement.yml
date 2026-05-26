@@ -1,0 +1,51 @@
+name: Clarity or plain-English improvement
+description: Suggest clearer wording that does not change the meaning of a rule.
+title: "[clarity] "
+labels: ["clarity", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when the meaning is correct but the wording could be clearer. If your suggestion would change the meaning of a rule, please use the "Policy feedback" template instead.
+  - type: input
+    id: file
+    attributes:
+      label: File
+      placeholder: trust-framework-1.0/part-3/11-operational-requirements.md
+    validations:
+      required: true
+  - type: input
+    id: paragraph
+    attributes:
+      label: Paragraph reference
+      placeholder: 11.4.c.
+    validations:
+      required: false
+  - type: textarea
+    id: current
+    attributes:
+      label: Current wording
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed wording
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this clearer?
+      description: For example "removes a double negative", "avoids unexplained jargon", "aligns with terminology used elsewhere in section X".
+    validations:
+      required: true
+  - type: checkboxes
+    id: meaning
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm this suggestion does not change the meaning of the rule.
+          required: true

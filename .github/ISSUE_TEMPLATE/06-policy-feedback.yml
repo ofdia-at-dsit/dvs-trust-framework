@@ -1,0 +1,59 @@
+name: Policy feedback
+description: Substantive feedback on a rule — something that would change how the rule is interpreted or applied.
+title: "[policy] "
+labels: ["policy-feedback", "ofdia-review", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Policy feedback is taken seriously. Issues using this template will be logged and escalated to the Office for Digital Identities and Attributes (OfDIA) rather than resolved by repository maintainers alone.
+
+        Substantive revisions to the trust framework follow OfDIA's publication and consultation processes; a GitHub merge alone does not change government policy.
+  - type: input
+    id: file
+    attributes:
+      label: File
+    validations:
+      required: true
+  - type: input
+    id: paragraph
+    attributes:
+      label: Paragraph reference
+      placeholder: 10.3.b.
+    validations:
+      required: false
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is the issue?
+      description: What about the rule does not work, is unclear in practice, has unintended consequences, or conflicts with something else?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Who is affected and how?
+      description: For example certified providers, relying parties, specific user groups, CABs, regulators.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or examples
+      description: Anything that supports the feedback — experience in certification, worked examples, external standards, conflicting guidance.
+    validations:
+      required: false
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: If you have a specific proposal. It's fine to raise an issue without one.
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this feedback will be escalated to OfDIA and that repository merge alone does not change government policy.
+          required: true

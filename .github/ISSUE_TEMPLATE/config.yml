@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussion
+    url: https://github.com/OWNER/REPO/discussions
+    about: For open-ended questions or broader conversation, please use GitHub Discussions instead of an issue.
+  - name: GOV.UK publication
+    url: https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0
+    about: The authoritative version of the trust framework lives on GOV.UK. For formal policy queries, please use the contact routes there.
+  - name: Security issue
+    url: https://github.com/OWNER/REPO/blob/main/SECURITY.md
+    about: Please do not raise security issues in public. See SECURITY.md for how to report them.

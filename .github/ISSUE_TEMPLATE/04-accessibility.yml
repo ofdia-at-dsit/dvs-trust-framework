@@ -1,0 +1,49 @@
+name: Accessibility issue
+description: Report an accessibility problem — alt text, heading structure, reading order, colour contrast, screen-reader behaviour.
+title: "[a11y] "
+labels: ["accessibility", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accessibility issues are high priority. Please share as much detail as is comfortable, including any assistive technology you were using and what you expected vs what happened.
+  - type: input
+    id: file
+    attributes:
+      label: File or URL
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Missing or poor alt text / figure description
+        - Heading structure / reading order
+        - Colour or contrast
+        - Screen-reader issue
+        - Keyboard navigation
+        - Language / plain-English barrier
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What is the issue?
+    validations:
+      required: true
+  - type: input
+    id: tech
+    attributes:
+      label: Assistive technology or environment
+      description: (optional) e.g. NVDA + Firefox 126 on Windows 11; VoiceOver on iOS 17
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: If you have one.
+    validations:
+      required: false

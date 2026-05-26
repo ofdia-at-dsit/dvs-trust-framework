@@ -1,0 +1,47 @@
+name: Typo or correction
+description: Report a typo, punctuation, capitalisation or formatting artefact.
+title: "[typo] "
+labels: ["typo", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for flagging this. Corrections that don't change meaning are among the easiest contributions to merge.
+  - type: input
+    id: file
+    attributes:
+      label: File
+      description: Which file does this relate to? (relative path)
+      placeholder: trust-framework-1.0/part-2/07-rules-for-holder-service-providers.md
+    validations:
+      required: true
+  - type: input
+    id: paragraph
+    attributes:
+      label: Paragraph or line
+      description: e.g. "7.2.a.", "the third bullet under 7.3", "the figure caption under Image_2"
+    validations:
+      required: false
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      description: Quote the exact current text.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed text
+      description: Quote the proposed corrected text.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Anything else a reviewer should know.
+    validations:
+      required: false
