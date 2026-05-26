@@ -47,10 +47,6 @@ See the [Part 4 landing page](part-4/README.md).
 - [15. Table of standards, guidance and legislation](part-4/15-table-of-standards-guidance-and-legislation.md)
 - [16. Glossary of terms and definitions](part-4/16-glossary-of-terms-and-definitions.md)
 
-## Additional information
-
-- [Additional information](additional-information/README.md) — placeholder folder for future repository material that is not part of the exact published Trust Framework text.
-
 ## Back
 
 - [Repository home](../README.md)
