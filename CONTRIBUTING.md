@@ -1,84 +1,57 @@
 > [!CAUTION]
 > This repository is a workspace copy for navigation, drafting, version control and collaboration. It is not the official statement of government policy and must not be relied on as such. For the official published policy, see the [UK digital verification services trust framework 1.0 on GOV.UK](https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0/uk-digital-verification-services-trust-framework-1-0-pre-release).
 
-# Contributing
+## Contributing
 
-This repository is a **workspace copy** of the UK digital verification services (DVS) trust framework. It exists to make the framework easier to navigate, review and version, and to open up a clearer, more structured route for **feedback, suggestions and proposed changes**.
+This repository provides a clearer and more structured way to give feedback on the UK digital verification services (DVS) trust framework.
 
-Contributions from providers, regulators, researchers, assistive-technology users, policy specialists, plain-English reviewers and the wider public are welcome.
+We welcome feedback from providers, regulators, researchers, assistive technology users, policy specialists, plain English reviewers and members of the public.
 
-> The authoritative version of the trust framework remains the publication on GOV.UK. This repository does not override it. Changes accepted here do not automatically become government policy — material revisions to the framework follow the Office for Digital Identities and Attributes (OfDIA) publication and consultation processes.
+>The version published on GOV.UK remains the authoritative version of the trust framework. Content in this repository does not replace it. A suggestion made or accepted here does not automatically become government policy. Changes to the trust framework follow the Office for Digital Identities and Attributes (OfDIA) publication and consultation processes.
 
-## What you can contribute
+### How to provide feedback
 
-We particularly welcome contributions in these categories:
+At this stage, we are accepting feedback through GitHub issues only. Please do not open a pull request.
 
-- **Corrections** — typos, broken links, formatting artefacts, misplaced punctuation.
-- **Clarity and plain English** — suggestions for rephrasing that make a requirement easier to understand without changing its meaning.
-- **Structural and navigation improvements** — to READMEs, cross-links, tables of contents, folder structure.
-- **Accessibility** — alt text, figure descriptions, heading structure, reading order, colour-contrast issues in any images.
-- **Supporting material** — diagrams, worked examples, mappings to external standards, annexes, implementation notes. These go in `supporting-material/`.
-- **Policy feedback** — substantive points about the rules themselves. These will be escalated to OfDIA rather than merged directly.
-- **Tooling** — CI workflows, linting, link checking, converters, renderers.
+To give feedback, [open an issue](../../issues/new/choose) and select the template that best matches your point.
 
-If you are unsure which bucket your contribution falls into, raise an issue first and we will help you route it.
+You can use an issue to:
 
-## How to contribute
+- report a typo or other correction
+- suggest a clarity or plain English improvement
+- identify a structural or navigation problem
+- report an accessibility issue
+- report a broken or out-of-date link
+- provide feedback on the policy
+- suggest supporting material
 
-### 1. Raise an issue
+You do not need to propose a solution. Please give enough information for us to understand and consider the point, including a link to the relevant section where possible.
 
-The fastest way to propose something is to [open an issue](../../issues/new/choose) using one of the templates:
+If none of the templates seems suitable, choose the closest match and explain your point in the issue.
 
-- **Typo or correction**
-- **Clarity improvement**
-- **Structural or navigation feedback**
-- **Accessibility issue**
-- **Broken or out-of-date link**
-- **Policy feedback** (escalated to OfDIA)
-- **Supporting material proposal**
+### What happens to feedback
 
-Issues can be conversational. You do not need to bring a fix.
+Repository maintainers will review issues and decide the appropriate next step.
 
-### 2. Open a pull request
+Some corrections or improvements may be made in the repository. Feedback that could change the meaning or operation of the trust framework will be considered through OfDIA's policy, governance and publication processes.
 
-If you have a concrete change in mind, fork the repository, make your change on a feature branch, and open a pull request. The PR template walks you through the basics.
+Raising an issue does not guarantee that a change will be made to the repository or the trust framework.
 
-### 3. Start a discussion
+### Before raising an issue
 
-For broader, open-ended conversations that are not tied to a specific change, use [GitHub Discussions](../../discussions) on this repository.
+- Check whether someone has already raised the same point.
+- Keep each issue focused on one point where possible.
+- Do not include personal data in examples, screenshots or logs.
+- Treat other contributors and repository maintainers with respect.
 
-## Ground rules
+### Security
 
-- **Assume good faith** and treat other contributors with respect.
-- **One change per PR where possible.** Bundled changes are harder to review and harder to escalate to OfDIA if policy feedback is involved.
-- **Keep the caution block.** Every Markdown file in the repository starts with the standard caution block reminding readers this is a workspace copy. Do not remove it. A CI check enforces this.
-- **Flag substantive policy changes.** If your PR changes the *meaning* of a published rule (rather than its wording, formatting, or links), say so clearly in the PR description. These PRs will typically be held open pending OfDIA review rather than merged directly.
-- **Respect personal data and privacy** in issues and PRs. Do not include personal data in examples, screenshots or logs.
+Do not raise a public issue if you believe you have found a security vulnerability. Follow the process in [SECURITY.md](SECURITY.md).
 
-## Style and formatting
+### Code of conduct
 
-- Markdown, one main numbered section per file, as currently structured.
-- Use UK English spelling.
-- Prefer plain text and accessible Markdown tables over images where possible.
-- Images live in `/media` using the existing filenames.
-- Line endings are LF (enforced by `.gitattributes`).
-- Trailing whitespace inside the publication text is sometimes significant; leave it alone unless your change is specifically to clean it up and you note that.
+Contributors are expected to follow the [Contributor Covenant](https://www.contributor-covenant.org/) version 2.1 or later.
 
-## How proposed changes are reviewed
+### Licence
 
-1. A repository maintainer (see `.github/CODEOWNERS`) triages the issue or PR within a reasonable timeframe.
-2. Editorial, structural, accessibility and tooling changes can be merged directly after review.
-3. Substantive changes to the meaning of published rules are logged and passed to OfDIA. Merging of those PRs follows OfDIA’s process, not GitHub review alone.
-4. Accepted changes are recorded in [`CHANGELOG.md`](CHANGELOG.md), tagged `[repo]` or `[publication]` depending on their nature.
-
-## Security
-
-If you believe you have found a security issue, please do not raise it as a public issue. See [`SECURITY.md`](SECURITY.md).
-
-## Code of conduct
-
-Contributors are expected to follow the [Contributor Covenant](https://www.contributor-covenant.org/) version 2.1 or later. A dedicated `CODE_OF_CONDUCT.md` may be added in a future revision.
-
-## Licence
-
-By contributing, you agree that your contribution will be licensed under the same terms as the repository. See [`LICENCE.md`](LICENCE.md).
+Feedback submitted to this repository will be handled under the terms set out in [LICENCE.md](LICENCE.md).
