@@ -1,3 +1,15 @@
+> [!IMPORTANT]
+> **Status: parked. Not deployed, and not in use.**
+>
+> This workflow builds a live website from the draft content in this repo and is close to complete, but it is not published anywhere and
+> should not be. 
+>
+>The build workflow is set to manual trigger only, and GitHub Pages
+> is deliberately not enabled for this repository as of yet. 
+>
+>
+>We are exploring this as a more accessible way to view the working draft.
+
 # docs-site
 
 The GOV.UK-styled static site for this repository. Built with [Eleventy (11ty)](https://www.11ty.dev/) and the official [govuk-frontend](https://github.com/alphagov/govuk-frontend) npm package, following the pattern used by the OfDIA data-schema-docs site for toolchain consistency.
