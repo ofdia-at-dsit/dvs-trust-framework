@@ -27,7 +27,6 @@ The publication is organised into four parts:
 Additional 1.0 material:
 
 - [Version and certification validity notes](trust-framework-1.0/00-version-and-certification-validity-notes.md)
-- [Additional information folder](trust-framework-1.0/additional-information/README.md)
 
 ## Repository contents
 
